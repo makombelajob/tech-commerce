@@ -73,6 +73,7 @@ class AppFixtures extends Fixture
         $products = [];
         for ($i = 0; $i < 30; $i++) {
             $product = new Products();
+            // modifier le nom en mettant un tableau de produits et la description
             $name = $faker->words(3, true);
             $product->setName($name)
                 ->setDescription($faker->paragraph)
